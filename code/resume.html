@@ -1,0 +1,82 @@
+<!--
+
+Program: resume.html
+Author:  Jared Brudner
+Date:	 2/15/2017
+Updated: 6/16/2017
+
+-->
+
+<!DOCTYPE html>
+
+<html class="resume_bg">
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <title>Resume</title>
+    </head>
+
+    <body background="ocean_1.jpg">
+
+        <!-- White blank box to emphasize opaque background -->
+        <div class="whiteBox"></div>
+		
+		<!-- Container at top of page -->
+        <div class="headerBox"></div>
+		
+		<!-- This is the website title -->
+        <p class="siteName">Jared Brudner ePortfolio</p>
+        
+		<!-- Overlay Navigation -->
+        <div id="myNav" class="overlay">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<div class="overlay-content">
+				<a href="index.html">Home</a>
+				<a href="artifacts.html">Artifacts</a>
+				<a href="resume.html">Resume</a>
+			</div>
+		</div>
+		
+		<!-- Button to toggle navigation overlay -->
+		<span onclick="openNav()">
+		
+		<!-- Briefcase logo image to access overlaying navigation -->
+		<img src="briefcase.png" style="width: 4.5vw; height: 4.5vw;">
+		
+		</span>
+		
+		<!-- Name of this page -->
+		<p id="pageName">Resume</p>
+		
+		<!-- This is the JavaScript for the overlay navigation -->
+		<script>
+		function openNav() {
+			document.getElementById("myNav").style.width = "100%";
+		}
+
+		function closeNav() {
+			document.getElementById("myNav").style.width = "0%";
+		}
+		</script>
+
+		<!-- This is my resume displayed live in the form of a PDF -->
+		<object data="resume_latest.pdf" id="resume"></object>
+		
+		<!-- This is my OSHA certificate displayed live in the form of a PDF -->
+		<object data="osha_cert.pdf" id="osha"></object>
+		
+		<!-- Feedback statement text on bottom of home and resume pages -->
+		<p id="givefeed">Questions? Comments? Feedback? <a href="https://goo.gl/forms/LzWknqJPIEn7fcOR2" target="_blank"><u>Click Here</u></a></p>
+
+        <!-- Footer on bottom of page -->
+		<p id="time"></p><p id="lang_foot">Assabet. Do. More. &nbsp; &nbsp; &nbsp; &nbsp;Jared Brudner</p>
+		
+		<!-- Learned this concept from w3schools -->
+		<script>
+		document.getElementById("time").innerHTML = Date() + document.getElementById("time").innerHTML;
+		</script>
+
+    </body> 
+
+
+</html>

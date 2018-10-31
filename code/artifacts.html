@@ -1,0 +1,200 @@
+<!--
+
+Program: artifacts.html
+Author:  Jared Brudner
+Date:	 2/15/2017
+Updated: 6/16/2017
+
+-->
+
+<!DOCTYPE html>
+
+<html class="artifacts_bg">
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <title>Artifacts</title>
+    </head>
+
+    <body background="palmtrees_1.jpg" onload="onload()">
+
+        <!-- White blank box to emphasize opaque background -->
+        <div class="whiteBox"></div>
+		
+		<!-- Container at top of page -->
+        <div class="headerBox"></div>
+		
+		<!-- This is the website title -->
+        <p class="siteName">Jared Brudner ePortfolio</p>
+
+		<!-- Overlay Navigation -->
+		<div id="myNav" class="overlay">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<div class="overlay-content">
+				<a href="index.html">Home</a>
+				<a href="artifacts.html">Artifacts</a>
+				<a href="resume.html">Resume</a>
+			</div>
+		</div>
+		
+		<!-- Button to toggle navigation overlay -->
+		<span onclick="openNav()">
+		
+		<!-- Briefcase logo image to access overlaying navigation -->
+		<img src="briefcase.png" style="width: 4.5vw; height: 4.5vw;">
+		
+		</span>
+		
+		<!-- This is the JavaScript for the overlay navigation -->
+		<script>
+		function openNav() {
+			document.getElementById("myNav").style.width = "100%";
+		}
+
+		function closeNav() {
+			document.getElementById("myNav").style.width = "0%";
+		}
+		</script>
+		
+		<!-- Name of this page -->
+		<p id="pageName">Artifacts</p>
+		
+		<!-- Displays the heading of Professional on artifacts page -->
+		<h1 id="prohead"><u>Professional</u></h1>
+		
+		<!-- Modal concept from w3schools. -->
+		
+		<!-- Initiates a table containing the Modal images of artifacts both personal and professional with their descriptive captions of text -->
+		<table id="table">
+		
+		    <tr>
+			
+			    <td id="art1">
+				
+					<!-- Modal image artifact 1 -->
+					<img id="myImg1" src="artifact1.png" alt="At the start of
+					sophomore year at Assabet, I was given the opportunity to 
+					participate in a client-based website development project in shop. The instructor from Design & Visual Communications stated that he would like/need a website built for his program to stream live content, display athletic and scholastic footage and imagery, and educate incoming freshmen about shop. I wanted to get involved and see what it would be like to gain experience with a client, and this was a great opportunity. Diving into the process, I learned quite a bit about problem-solving skills, developing a strong relationship amongst my colleagues, and of course gaining more and more useful knowledge of HTML, CSS, JavaScript, PHP, and more. I worked with my colleagues to build this website, which was extremely detailed and technologically advanced. I am very glad I got involved in the project as I obtained experience in programming and client relationships." width="300" height="200">
+					
+				</td>
+				
+				<td id="art2">
+				
+					<!-- Modal image artifact 2 -->
+					<img id="myImg2" src="artifact2.png" alt="After the New Year began in 2017, I took on a web project for my grandmother that involved creating a logo, constructing design mockups of the website, and building the code. While taking on this process, I had to have good listening skills, stay focused on her thoughts and ideas and while multi tasking to create a nice website. My objective was to develop a website targeted toward real estate agents and home buyers. It was crucial that I developed her website in time for her approval so that she could obtain the exposure she needed to grow her business. " width="300" height="200">
+					
+				</td>
+				
+				<td id="art3">
+				
+					<!-- Modal image artifact 3 -->
+					<img id="myImg3" src="artifact3.jpg" alt="Track & Field was a new and exciting challenge for me this year. Nothing comes easily and I quickly learned at practice, that if I wanted to improve in the Discus, I would need to practice. My teammates made it an enjoyable experience, though my practices were tiring at times and grueling due to the unpleasant weather. My coaches were pleased with my achievements, and I was happy to have made some new friends, while learning a new skill and getting some exercise." width="300" height="200">
+					
+				</td>
+				
+		    </tr>
+			
+			<!-- Displays the heading of Personal on artifacts page -->
+			<h1 id="perhead"><u>Personal</u></h1>
+			
+			<tr>
+			
+				<td id="art4">
+				
+					<!-- Modal image artifact 4 -->
+					<img id="myImg4" src="artifact4.jpeg" alt="At the age of three I developed a passion for boating and fishing. Every summer and when I would visit relatives in Florida, all I could think of was activities on the lake and the ocean.  As long as my Papa or my father agreed to take me on an excursion, I was happy.  One summer, I got Lyme disease and had to have an antibiotic that was given to me through a PIC line which started in my arm, traveled up to my shoulder, and ended just above my heart. The doctored prescribed this medical procedure to be sure that I’d feel less pain and swelling in my knee from the Lyme Infection. Luckily, it worked, but I was not able to swim, play sports or sweat for the entire summer of my Fourth Grade year. Thanks to a few adventures in boating, my summer wasn’t as bad as I thought it would be." width="300" height="200">
+					
+				</td>
+				
+				<td id="art5">
+				
+					<!-- Modal image artifact 5 -->
+					<img id="myImg5" src="artifact5.jpg" alt="I have been saving for a car for the past five years. While other kids were playing video games, I was selling video games for a profit, and I still sell technology today. Instead of using all of the money I have made to buy technology, I have saved a percentage of my earnings each year. Last month, with some help from my family, I was able to contribute toward the purchase of my new car, a Ford Fusion Titanium. After researching car buying techniques and tips, I have learned more about automobiles, and I hope to buy and sell a few cars in the process." width="300" height="200">
+					
+				</td>
+				
+				<td id="art6">
+				
+					<!-- Modal image artifact 6 -->
+					<img id="myImg6" src="artifact6.png" alt="Since the start of my high school career, I have obtained two awards for which I am proud. The first award was received my Freshman year, was the Rising Star award that signifies my potential to excel as a high school varsity athlete. I was honored to receive the Arnold Palmer award because Arnold Palmer was known for his outstanding sportsmanship and etiquette. " width="300" height="200">
+					
+				</td>
+				
+		    </tr>
+			
+		</table>
+		
+		<!-- The Modal set-up (initiation) -->
+		<div id="myModal" class="modal">
+		
+		  <!-- Displays the "X" icon to close the Modal -->
+		  <span class="close">&times;</span>
+		  
+		  <!-- Displays the images in the modal table set up -->
+		  <img class="modal-content" id="img01">
+		  
+		  <!-- Displays the caption of text under the artifact image -->
+		  <div id="caption"></div>
+		  
+		</div>
+
+		<script>
+		
+		function test(id)
+		{
+			
+			// Get the image and insert it inside the modal - use its "alt" text as a caption
+			var img = document.getElementById(id);
+			
+			img.onclick = function(){
+				modal.style.display = "block";
+				modalImg.src = this.src;
+				captionText.innerHTML = this.alt;
+			}
+
+		}
+		
+		// Get the modal
+		var modal = document.getElementById('myModal');
+		
+		// Grabs the image clicked and executes Modal feature
+		var modalImg = document.getElementById("img01");
+		
+		// Displays the caption of text under the image
+		var captionText = document.getElementById("caption");
+		
+	    // Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() { 
+			modal.style.display = "none";
+		}
+		
+		// Implementation of the test function when page loads, each artifact image modal executes
+		function onload()
+		{
+		    test("myImg1");
+			test("myImg2");
+			test("myImg3");
+			test("myImg4");
+			test("myImg5");
+			test("myImg6");
+		}
+		
+		</script>
+
+		<!-- Footer on bottom of page -->
+		<p id="time"></p><p id="lang_foot">Assabet. Do. More. &nbsp; &nbsp; &nbsp; &nbsp;Jared Brudner</p>
+		
+		<!-- Learned this concept from w3schools -->
+		<script>
+		
+		// Sets the Date function in JavaScript to the id of time 
+		document.getElementById("time").innerHTML = Date() + document.getElementById("time").innerHTML;
+		</script>
+		
+    </body> 
+
+
+</html>
